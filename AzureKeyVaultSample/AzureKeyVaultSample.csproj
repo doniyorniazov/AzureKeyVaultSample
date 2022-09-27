@@ -5,6 +5,19 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>ba1e86c6-e842-487b-ada5-dc1080e33835</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Azure.Identity" />
+    <None Remove="Azure.Security.KeyVault.Secrets" />
+    <None Remove="Azure.Extensions.AspNetCore.Configuration.Secrets" />
+    <None Remove="Microsoft.Extensions.Configuration.UserSecrets" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.7.0" />
+    <PackageReference Include="Azure.Security.KeyVault.Secrets" Version="4.4.0" />
+    <PackageReference Include="Azure.Extensions.AspNetCore.Configuration.Secrets" Version="1.2.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="5.0.0" />
+  </ItemGroup>
 </Project>
